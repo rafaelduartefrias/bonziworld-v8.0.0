@@ -336,7 +336,7 @@ body
     box-shadow: 2px 2px 0 var(--shadow-color);
 }
 
-#account-message
+#version
 {
     font: var(--message-font-size) var(--primary-font-family);
 }
@@ -416,7 +416,7 @@ body
     background: linear-gradient(90deg, var(--user-listing-0), var(--user-listing-1));
 }
 
-.password-box
+.card-box
 {
     display: flex;
     flex-direction: column;
@@ -430,16 +430,16 @@ body
  * yet correctly supported by the webkit
  * version included in the lighdm package.
  */
-.password-box > *
+.card-box > *
 {
     margin-bottom: 4px;
 }
-.password-box > *:last-child
+.card-box > *:last-child
 {
     margin-bottom: 0;
 }
 
-.password
+.username
 {
     box-shadow: 2px 2px 0 var(--shadow-color);
     outline: none;
@@ -454,7 +454,22 @@ body
     height: var(--password-entry-height);
 }
 
-.password-form
+.room
+{
+    box-shadow: 2px 2px 0 var(--shadow-color);
+    outline: none;
+    border: none;
+    padding-left: 8px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    width: var(--password-entry-length);
+    height: var(--password-entry-height);
+}
+
+.card-form
 {
     visibility: hidden;
     display: flex;
