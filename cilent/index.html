@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BonziWORLD</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
+  <script src="./script.js"></script>
+</script>
+</head>
+<body>
+<div id="main-content">
+            <!-- Header -->
+            <div id="header"></div>
+            <div id="headerStripe"></div>
+            <!-- Login Screen Content -->
+            <div id="center">
+                <div id="centerLeft">
+                    <img src="img/logo.png" id="logo"/>
+                    <span id="text-under-logo">
+                        Welcome! To The BonziWORLD!
+                        To begin, click your user name
+                    </span>
+                </div>
+                <div id="centerDivider"></div>
+                <div id="centerRight">
+                    <div id="userListings">
+                        <template id="user-template">
+                            <div class="user-border-wrapper">
+                                <div class="user">
+                                    <div class="profile-picture-wrapper">
+                                        <img src="img/pfp.png" class="profile-picture">
+                                    </div>
+                                    <span class="user-name">
+                                        Guest
+                                    </span>
+                                    <div class="card-box">
+                                        <span class="msg">
+                                            Type your Username And Room Id
+                                        </span>
+                                        <form class="card-form">
+                                            <input type="Username" class="username"/>
+                                            <input type="Room ID" class="room"/>
+                                            <input type="image" src="img/continue.png" id="password-entry-button" class="img-button"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div id="footerStripe"></div>
+            <div id="footer">
+                <div id="version">
+                    EXPERMENTIAL
+                </div>
+            </div>
+</div>
+  
+</body>
+</html>
